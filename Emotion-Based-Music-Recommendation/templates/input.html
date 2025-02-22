@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion-Based Music Recommender</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/input.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>🎶 AI Mood-Based Music Recommender 🎭</h1>
+        <p>Face the camera, adjust yourself & hit ENTER to analyze emotions.</p>
+
+        <form action="/display" method="POST">
+            <div class="input-box">
+                <label for="language">🌎 Preferred Language (Optional):</label>
+                <input type="text" id="language" name="language" placeholder="e.g., English, Hindi, Spanish">
+            </div>
+
+            <div class="input-box">
+                <label for="singer">🎤 Favorite Singer (Optional):</label>
+                <input type="text" id="singer" name="singer" placeholder="e.g., Ed Sheeran, Arijit Singh">
+            </div>
+
+            <button type="submit">🚀 Capture & Analyze Emotion</button>
+        </form>
+    </div>
+</body>
+</html>
